@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raandu Profile</title>
+<style>
+:root{
+--earth:#6b4423;
+--gold:#c9a24a;
+--ivory:#f4ecdc;
+--dark:#16120d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Georgia, serif;
+background:var(--ivory);
+color:var(--dark);
+}
+.pattern{
+height:15px;
+background:repeating-linear-gradient(45deg,var(--gold),var(--gold) 12px,var(--earth) 12px,var(--earth) 24px);
+}
+.cover{
+height:300px;
+background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+position:relative;
+}
+.profile-card{
+max-width:1100px;
+margin:-80px auto 30px;
+padding:0 20px;
+position:relative;
+}
+.profile-header{
+background:white;
+border:4px solid var(--earth);
+padding:25px;
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+align-items:center;
+}
+.avatar{
+width:150px;
+height:150px;
+border-radius:50%;
+background:#ddd;
+border:5px solid var(--gold);
+}
+.user-info h1{
+color:var(--earth);
+margin-bottom:10px;
+}
+.badge{
+display:inline-block;
+background:var(--gold);
+padding:5px 12px;
+margin-top:5px;
+font-weight:bold;
+}
+.stats{
+display:flex;
+gap:25px;
+margin-top:15px;
+font-weight:bold;
+}
+.layout{
+max-width:1100px;
+margin:auto;
+padding:0 20px 40px;
+display:grid;
+grid-template-columns:300px 1fr;
+gap:20px;
+}
+.panel{
+background:white;
+border:3px solid var(--earth);
+padding:20px;
+}
+.panel h3{
+color:var(--earth);
+margin-bottom:15px;
+}
+.post{
+border-left:5px solid var(--gold);
+padding-left:15px;
+margin-bottom:20px;
+}
+.post small{
+color:#777;
+}
+.info-row{
+margin-bottom:12px;
+}
+.button{
+display:inline-block;
+padding:12px 20px;
+background:var(--earth);
+color:white;
+text-decoration:none;
+margin-top:15px;
+}
+@media(max-width:900px){
+.layout{
+grid-template-columns:1fr;
+}
+.profile-header{
+text-align:center;
+justify-content:center;
+}
+.stats{
+justify-content:center;
+flex-wrap:wrap;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="pattern"></div>
+
+<div class="cover"></div>
+
+<div class="profile-card">
+<div class="profile-header">
+
+<div class="avatar"></div>
+
+<div class="user-info">
+<h1>David Deng</h1>
+<p>🇸🇸 South Sudan • Computer Science Student</p>
+<div class="badge">Member of the Digital Village</div>
+
+<div class="stats">
+<div>1,254 Followers</div>
+<div>340 Following</div>
+<div>87 Stories</div>
+</div>
+
+<a href="#" class="button">Edit Profile</a>
+</div>
+
+</div>
+</div>
+
+<div class="layout">
+
+<div class="panel">
+
+<h3>Identity</h3>
+
+<div class="info-row"><strong>State:</strong> Jonglei</div>
+<div class="info-row"><strong>County:</strong> Bor</div>
+<div class="info-row"><strong>Language:</strong> Dinka & English</div>
+<div class="info-row"><strong>Current Country:</strong> India</div>
+
+<hr style="margin:20px 0;">
+
+<h3>About Me</h3>
+
+<p>
+Passionate about technology, education, entrepreneurship,
+and building digital solutions for South Sudan.
+</p>
+
+</div>
+
+<div class="panel">
+
+<h3>Stories Around the Fire</h3>
+
+<div class="post">
+<p>
+Today I completed a new milestone on the Raandu platform.
+The vision is to connect South Sudanese people worldwide.
+</p>
+<small>2 hours ago</small>
+</div>
+
+<div class="post">
+<p>
+Technology can help create opportunities for future generations.
+What innovations would you like to see in South Sudan?
+</p>
+<small>Yesterday</small>
+</div>
+
+<div class="post">
+<p>
+Sharing scholarship opportunities for students interested in studying abroad.
+</p>
+<small>3 days ago</small>
+</div>
+
+</div>
+
+</div>
+
+<div class="pattern"></div>
+
+</body>
+</html>

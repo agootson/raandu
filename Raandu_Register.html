@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raandu - Join the Digital Village</title>
+
+<style>
+:root{
+    --black:#16120d;
+    --earth:#6b4423;
+    --gold:#c9a24a;
+    --ivory:#f4ecdc;
+    --dark-gold:#9e7730;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--ivory);font-family:Georgia,serif;color:var(--black);min-height:100vh;}
+.pattern{height:18px;background:repeating-linear-gradient(45deg,var(--gold),var(--gold) 12px,var(--earth) 12px,var(--earth) 24px);}
+.hero{text-align:center;padding:40px 20px 20px;}
+.logo-symbol{font-size:60px;}
+.hero h1{font-size:4rem;letter-spacing:6px;color:var(--earth);}
+.hero p{margin-top:10px;font-style:italic;color:#555;font-size:1.1rem;}
+.divider{width:220px;margin:20px auto;border-top:3px solid var(--gold);position:relative;}
+.divider::before{content:"◈";position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--ivory);padding:0 10px;color:var(--earth);}
+.container{max-width:850px;margin:20px auto 60px;padding:30px;}
+.registration-house{background:white;border:4px solid var(--earth);box-shadow:12px 12px 0 rgba(107,68,35,0.15);overflow:hidden;}
+.house-header{background:var(--earth);color:white;text-align:center;padding:20px;}
+.form-body{padding:35px;}
+.section-title{margin-bottom:20px;color:var(--earth);font-size:1.3rem;border-left:6px solid var(--gold);padding-left:12px;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.field{margin-bottom:18px;}
+.field label{display:block;margin-bottom:8px;font-weight:bold;color:var(--earth);}
+.field input,.field select{width:100%;padding:14px;border:2px solid #d9c9a7;background:#fffdf8;}
+.full{grid-column:1/-1;}
+.story-box{background:#f8f1e5;border-left:5px solid var(--gold);padding:18px;margin-bottom:25px;line-height:1.7;}
+.checkbox{margin:20px 0;}
+.btn{width:100%;padding:18px;border:none;background:var(--earth);color:white;font-size:1.1rem;}
+.footer-pattern{margin-top:50px;height:20px;background:repeating-linear-gradient(-45deg,var(--earth),var(--earth) 12px,var(--gold) 12px,var(--gold) 24px);}
+@media(max-width:768px){.grid{grid-template-columns:1fr;}.hero h1{font-size:2.5rem;}}
+</style>
+</head>
+<body>
+<div class="pattern"></div>
+<section class="hero">
+<div class="logo-symbol">🐂</div>
+<h1>RAANDU</h1>
+<p>Your Guy • The Digital Village of South Sudan</p>
+<div class="divider"></div>
+</section>
+<div class="container">
+<div class="registration-house">
+<div class="house-header">
+<h2>Join the Community</h2>
+<p>Every story has a place around the fire.</p>
+</div>
+<div class="form-body">
+<div class="story-box">Raandu is built to connect South Sudanese people across the world.</div>
+<form>
+<h3 class="section-title">Personal Identity</h3>
+<div class="grid">
+<div class="field"><label>First Name</label><input type="text"></div>
+<div class="field"><label>Last Name</label><input type="text"></div>
+<div class="field"><label>Username</label><input type="text"></div>
+<div class="field"><label>Email</label><input type="email"></div>
+</div>
+<button class="btn" type="submit">ENTER THE VILLAGE</button>
+</form>
+</div>
+</div>
+</div>
+<div class="footer-pattern"></div>
+</body>
+</html>

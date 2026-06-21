@@ -1,0 +1,224 @@
+
+:root{
+    --earth:#6b4423;
+    --gold:#c9a24a;
+    --ivory:#f4ecdc;
+    --dark:#16120d;
+    --light:#ffffff;
+    --border:#d9c9a7;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    background:var(--ivory);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+/* Dinka Pattern Borders */
+
+.pattern-top,
+.pattern-bottom{
+    height:15px;
+    background:
+    repeating-linear-gradient(
+        45deg,
+        var(--gold),
+        var(--gold) 12px,
+        var(--earth) 12px,
+        var(--earth) 24px
+    );
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    padding:30px 20px;
+}
+
+.logo{
+    font-size:3rem;
+    font-weight:bold;
+    color:var(--earth);
+    letter-spacing:4px;
+}
+
+.tagline{
+    font-style:italic;
+    color:#555;
+}
+
+/* Navigation */
+
+.navbar{
+    background:var(--earth);
+    color:white;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:black;
+}
+
+.btn-secondary{
+    background:var(--earth);
+    color:white;
+}
+
+/* Cards */
+
+.card,
+.panel{
+    background:white;
+    border:3px solid var(--earth);
+    padding:20px;
+    margin-bottom:20px;
+}
+
+/* Forms */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:2px solid var(--border);
+    background:#fffdf8;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:var(--gold);
+}
+
+label{
+    font-weight:bold;
+    color:var(--earth);
+}
+
+/* Feed Posts */
+
+.post{
+    background:white;
+    border-left:5px solid var(--gold);
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.post-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    font-weight:bold;
+}
+
+.post-actions{
+    margin-top:15px;
+    display:flex;
+    gap:15px;
+}
+
+/* Profile */
+
+.avatar{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background:#ddd;
+    border:5px solid var(--gold);
+}
+
+.cover{
+    height:280px;
+    background-size:cover;
+    background-position:center;
+}
+
+/* Layout */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.grid{
+    display:grid;
+    gap:20px;
+}
+
+.grid-2{
+    grid-template-columns:1fr 1fr;
+}
+
+.grid-3{
+    grid-template-columns:250px 1fr 300px;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#555;
+}
+
+/* Cultural Accent */
+
+.section-title{
+    color:var(--earth);
+    border-left:6px solid var(--gold);
+    padding-left:12px;
+    margin-bottom:20px;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    .grid-2,
+    .grid-3{
+        grid-template-columns:1fr;
+    }
+
+    .logo{
+        font-size:2rem;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:10px;
+    }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raandu Feed</title>
+<style>
+:root{
+--earth:#6b4423;
+--gold:#c9a24a;
+--ivory:#f4ecdc;
+--dark:#16120d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Georgia,serif;
+background:var(--ivory);
+color:var(--dark);
+}
+.pattern{
+height:15px;
+background:repeating-linear-gradient(45deg,var(--gold),var(--gold) 12px,var(--earth) 12px,var(--earth) 24px);
+}
+.navbar{
+background:var(--earth);
+color:white;
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.logo{
+font-size:2rem;
+font-weight:bold;
+letter-spacing:3px;
+}
+.container{
+max-width:1300px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:250px 1fr 300px;
+gap:20px;
+}
+.panel{
+background:white;
+border:3px solid var(--earth);
+padding:20px;
+}
+.profile{
+text-align:center;
+}
+.profile img{
+width:100px;
+height:100px;
+border-radius:50%;
+background:#ddd;
+}
+.menu a{
+display:block;
+padding:10px 0;
+text-decoration:none;
+color:var(--earth);
+font-weight:bold;
+}
+.create-post textarea{
+width:100%;
+height:100px;
+padding:10px;
+border:2px solid #ccc;
+resize:none;
+}
+.btn{
+margin-top:10px;
+padding:12px 20px;
+background:var(--earth);
+color:white;
+border:none;
+cursor:pointer;
+}
+.post{
+background:white;
+border:3px solid var(--earth);
+padding:20px;
+margin-top:20px;
+}
+.post-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+font-weight:bold;
+}
+.post-actions{
+margin-top:15px;
+display:flex;
+gap:15px;
+color:var(--earth);
+font-weight:bold;
+}
+.trending li{
+margin-bottom:12px;
+}
+@media(max-width:1000px){
+.container{
+grid-template-columns:1fr;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="pattern"></div>
+
+<div class="navbar">
+<div class="logo">🐂 RAANDU</div>
+<div>Welcome Back, David</div>
+</div>
+
+<div class="container">
+
+<!-- Left Sidebar -->
+<div class="panel profile">
+<img src="" alt="Profile">
+<h3>David</h3>
+<p>South Sudan 🇸🇸</p>
+<hr style="margin:15px 0;">
+<div class="menu">
+<a href="#">🏠 Home</a>
+<a href="#">👤 Profile</a>
+<a href="#">💬 Messages</a>
+<a href="#">👥 Communities</a>
+<a href="#">🎓 Scholarships</a>
+<a href="#">💼 Jobs</a>
+<a href="#">⚙ Settings</a>
+</div>
+</div>
+
+<!-- Feed -->
+<div>
+
+<div class="panel create-post">
+<h3>Share with the Village</h3>
+<textarea placeholder="What's happening in your community?"></textarea>
+<button class="btn">Post Story</button>
+</div>
+
+<div class="post">
+<div class="post-header">
+<span>John Deng</span>
+<span>2h ago</span>
+</div>
+<p>
+Today our local youth group planted 200 trees near Bor.
+Small actions create a better future.
+</p>
+<div class="post-actions">
+<span>❤ 42</span>
+<span>💬 8</span>
+<span>↻ Share</span>
+</div>
+</div>
+
+<div class="post">
+<div class="post-header">
+<span>Mary Ajak</span>
+<span>5h ago</span>
+</div>
+<p>
+New scholarship opportunities available for South Sudanese students.
+Check the Opportunities section.
+</p>
+<div class="post-actions">
+<span>❤ 118</span>
+<span>💬 31</span>
+<span>↻ Share</span>
+</div>
+</div>
+
+</div>
+
+<!-- Right Sidebar -->
+<div class="panel">
+<h3>🔥 Around the Fire</h3>
+<ul class="trending">
+<li>#Education</li>
+<li>#SouthSudanTech</li>
+<li>#YouthLeadership</li>
+<li>#Scholarships</li>
+<li>#Business</li>
+<li>#BorCounty</li>
+</ul>
+
+<hr style="margin:20px 0;">
+
+<h3>📢 Community Notice</h3>
+<p>
+Welcome to Raandu, the Digital Village of South Sudan.
+Respect all voices and contribute positively.
+</p>
+</div>
+
+</div>
+
+<div class="pattern"></div>
+
+</body>
+</html>
