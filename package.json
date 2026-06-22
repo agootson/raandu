@@ -1,0 +1,9 @@
+{
+  "name": "raandu",
+  "version": "1.0.0",
+  "description": "The Digital Village of South Sudan",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
